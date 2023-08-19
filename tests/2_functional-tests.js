@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 suite('Functional Tests', function () {
   this.timeout(5000);
   suite('Integration tests with chai-http', function () {
-    // #1
+    // #1----------------------------------------------------------------- 
     test('Test GET /hello with no name', function (done) {
       chai
         .request(server)
@@ -21,7 +21,7 @@ suite('Functional Tests', function () {
           done();
         });
     });
-    // #2
+    // #2----------------------------------------------------------------- 
     test('Test GET /hello with your name', function (done) {
       chai
         .request(server)
@@ -33,7 +33,7 @@ suite('Functional Tests', function () {
           done();
         });
     });
-    // #3
+    // #3----------------------------------------------------------------- 
     test('Send {surname: "Colombo"}', function (done) {
       chai
         .request(server)
@@ -46,7 +46,7 @@ suite('Functional Tests', function () {
           done();
         });
     });
-    // #4
+    // #4 ----------------------------------------------------------------- 
     test('Send {surname: "da Verrazzano"}', function (done) {
       assert.fail();
 
@@ -69,13 +69,13 @@ suite('Functional Tests with Zombie.js', function () {
   });
 
   suite('"Famous Italian Explorers" form', function () {
-    // #5
+    // #5----------------------------------------------------------------- 
     test('Submit the surname "Colombo" in the HTML form', function (done) {
       assert.fail();
 
       done();
     });
-    // #6
+    // #6----------------------------------------------------------------- 
     test('Submit the surname "Vespucci" in the HTML form', function (done) {
       assert.fail();
 
