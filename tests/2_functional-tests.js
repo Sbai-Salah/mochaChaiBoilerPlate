@@ -7,7 +7,7 @@ const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
 suite('Functional Tests', function () {
-  this.timeout(5000);
+  this.timeout(4000);
   suite('Integration tests with chai-http', function () {
     // #1----------------------------------------------------------------- 
     test('Test GET /hello with no name', function (done) {
